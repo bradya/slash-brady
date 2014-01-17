@@ -26,9 +26,8 @@ Slash command in Slack which adds a line of text to a user specified file (e.g. 
 http://yourappsubdomain.herokuapp.com/FILE-ID/SECRET-PASSWORD
 `
 
-In the end, it should look like this:
-
 `
+In the end, it should look like this:
 http://slackslashcommand.herokuapp.com/F02554SF8/1bf984e94f0a31773aaaacd293e01fdd
 `
 
