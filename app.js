@@ -45,7 +45,7 @@ app.post('/:id/:secret', function(req, res) {
           request.post({ url: postUrl, json: true, form: {token: token, file: fileId, content: content} },
             function (error, response, result) {
               if (!error && response.statusCode == 200) {
-                res.send('Success');
+                res.send('Thank you. Brady will comply.');
               }
               else {
                 res.send('Error: ' + error);
