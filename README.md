@@ -24,8 +24,7 @@ Slash command in Slack which adds a line of text to a user specified file (e.g. 
 8. Add two config variables to your heroku app 'heroku config:add slack_token=API-TOKEN' and 'heroku config:add slack_secret=SECRET-PASSWORD' replacing API-TOKEN and SECRET-PASSWORD with applicable values.
 9. Type your slash command in Slack and it should work! Ping me on Twitter if you run into any issues @bradyy
 
-
-## URL construction
+### URL construction
 
 `
 http://yourappsubdomain.herokuapp.com/FILE-ID/SECRET-PASSWORD
