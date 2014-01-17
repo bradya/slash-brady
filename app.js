@@ -6,7 +6,7 @@ var app = express();
 app.use(logfmt.requestLogger());
 app.use(express.bodyParser());
 
-app.post('/:id', function(req, res) {
+app.post('/:id/:secret', function(req, res) {
   var token = null;
 
   if (process.env.slack_token === process.env.slack_token + '') {
@@ -21,6 +21,15 @@ app.post('/:id', function(req, res) {
   if (req.params.id === req.params.id + '') {
     // File id is specified and is string
     var fileId = req.params.id;
+    var secret = req.params.secret;
+
+    if (process.env.slack_secret === process.env.slack_secret + '') {
+      // If secret is specified in environment variables, validate it
+      var isSecretValid = process.env.slack_secret === secret;
+      if (!isSecretValid) {
+        return;
+      }
+    }
 
     var url = 'https://slack.com/api/files.info?token=' + token + '&file=' + fileId;
 
