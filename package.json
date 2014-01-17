@@ -1,0 +1,22 @@
+{
+  "name": "slashbrady",
+  "version": "0.0.0",
+  "description": "Slash command for adding a line to a file in Slack",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "keywords": [
+    "slack"
+  ],
+  "author": "bradya",
+  "license": "MIT",
+  "dependencies": {
+    "logfmt": "~0.18.1",
+    "express": "~3.4.8"
+  },
+  "engines": {
+    "node": "0.10.x"
+  }
+}
